@@ -79,6 +79,24 @@
             _blank will open the destination in a new browser tab (page)
         -->
         <a href="https://www.nait.ca" target="_blank">Go to NAIT</a>
+        <h3>Image Tag</h3>
+        <!--
+            Empty tag
+            The image tag does not have a closing tag because there is no content to display
 
+            Paremeters:
+            src="realative website location"
+            alt="Printable text if image is not found on file"
+            [title="tool tip text for the image"]
+
+            The realitive path is from the top of your website down/up to the file/page you desire to reference
+            Down: include all subfolder names and the final file name
+            sfl1/sfl2/filename (html-basic-tags\img\photoshop.png)
+
+            up: use the string .. to go up a level  
+        -->
+            <img src="img/photoshop.png" alt="Photoshop Logo" title="This is the Photoshop Logo">
+            <a href="http://adobe.com" target="_blank"><img src="img/photoshop.png" alt="Photoshop Logo" title="Go to adobe webpage" style="width: 80px; height: 80px;"></a>
+            <!-- Add the <img> tag as the content of an <a> tag to created a clickable image-->
     </body>
 </html>
