@@ -1,11 +1,81 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
-        <title>on the page title tab</title>
+        <title>Tables</title>
         <meta charset="utf-8">
         <meta name="author" content="Dawson Lefebvre">           
     </head>
     <body>
+        <h1>Tables</h1>
+        <p>Looking for the Best Canadian Web Hosting? We’ve reviewed the top Canadian web hosts and below you’ll find coupons and discounts for the Top Canadian Hosting providers.  More and more Canadians are looking for their website to be hosted in Canada to benefit from search engine rankings and to ensure their privacy is protected by Canadian laws.  If you’re a Canadian business looking for a suitable hosting provider then take a look at our list below of Canadian web hosts.</p>
+        
+        <!--table tag : specifies a table
+        <table>
+            <thead> : specifies the column header area, defaults to bold
+                <tr> : specifies the beginning of a row anywhere in the table
+                    <th></th> : specifies a cell in the thead area
+                </tr>
+            </thead>
+            <tbody> : specifies table content data *REQUIRED*
+                <tr>
+                    <td></td> : specifies a content cell in the tbody area
+                </tr>
+            </tbody>
+            <tfoot> : specifies the footer area of your table, used for totals, messages etc...
+                <tr>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+        -->
+        <!-- border parameter is obsolete and a known error, we may use this until we learn CSS-->
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Host Name</th>
+                    <th>Bandwidth <img src="img/server.png" alt="server.png"></th>
+                    <th>Price<img src="img/cash.png" alt="cash.png"></th>
+                    <th>Money Back</th>
+                    <th>Coupon</th>
+                    <th>Rating</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HostUpon</td>
+                    <td>Unlimited</td>
+                    <td>$3.68/mo</td>
+                    <td>30 Days</td>
+                    <td>15% off</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>BlueHost</td>
+                    <td>Unlimited</td>
+                    <td>$6.99/mo</td>
+                    <td>anytime</td>
+                    <td>$3.95/mo*</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>HostGator</td>
+                    <td>Unlimited</td>
+                    <td>$3.71/mo</td>
+                    <td>45 days</td>
+                    <td>20%</td>
+                    <td>4</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <!--One can merge cells on a table within a row
+                    to merge the cells, use the colsoan="n" parameter on your td tag
+                    You can merge up to the total number of columns
+                    You can have multiple merged cells-->
+                    <td colspan="6">*limited to 3 months of service</td>
+                </tr>
+            </tfoot>
+        </table>
 
     </body>
 </html>
