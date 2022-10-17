@@ -1,0 +1,105 @@
+/********************************************************
+Different types of syntax for selectors
+
+element selector: 
+********************************************************/
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/*Multiple element selectors
+If you have the same rules for multiple element selectors, you may group the selectors as a comma separated list
+The group may be coded on one physical line or over multiple lines*/
+
+h1, h2,
+h3,
+h4, 
+p{
+    margin: 0;
+    padding: 0;
+}
+
+/*If you repeat the element selector in your css file, any additional rules are combined with previously specified rules
+If you recode a preexisting rule, the new rule overrides the rule (last rule wins)*/
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #111;
+}
+
+/*Decendant selectors:
+A decendant selector is a set of element selectors when used in your html, follow immediatly, one after another
+This can be used to isolate a particular selector from other occurances of the same selector on the page*/
+
+footer ul{
+    background-color: aquamarine;
+} /*Only changes the colour of a <ul> within a <footer>*/
+
+footer{
+    background-color: #dedede;
+    padding: 48px;
+    border: 1px solid red;
+}
+
+/*Child selector:
+Similar to decendant, but not immedeietly after
+Selector order is parent through child*/
+
+main p{
+    font-style: italic;
+}
+
+h1{
+    padding: 48px;
+    color: #696969;
+    border-bottom: 1px solid #dedede;
+}
+
+section{
+    font-family: Arial;
+    width: 800px;
+    margin: 48px;
+}
+
+/*Class selectors
+
+types: 
+user (targetted) class
+psuedo classes, these are attached to elements
+
+a user class is a user defined name 
+syntax: .user-name {rules}
+on html a class is specified within an html tag
+html syntax <tag class="user-name">
+
+you can have multiple classes on one html tag
+NOTE: the list does not use commas 
+syntax: <tag class="user-name1 user-name2 etc...">*/
+
+.menu-items{
+    font-family: 'Courier New', sans-serif;
+    list-style-type: none;
+    width: 600px;
+    padding: 24px;
+    border-left: 5px solid red;
+    background-color: #f4f4f4;
+    margin-left: 24px;
+}
+
+/*Not all html tags have pre-coded psuedo classes
+the anchor tag has 4 of these
+The order in which the anchor tag psuedo classes are specifeid within youe css is important
+When you overide the psuedo class, you are overriding the defaults of the class
+
+a:link unused anchor link
+a:hover, when your cursor haover over
+a:visited, used after you have gone to the anchor link
+a:active used when you are clicking the anchor link*/
+
+footer a:hover{
+    font-size: larger;
+    color: yellow;
+}
