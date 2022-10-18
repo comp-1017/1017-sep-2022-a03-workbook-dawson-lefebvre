@@ -1,0 +1,54 @@
+footer{
+    background-color: #333;
+    color: yellow;
+}
+
+/*We can make a specific class with your css rule */
+
+.nav-background{
+    background-color: #ddd;
+}
+
+nav ul{
+    list-style: none;
+}
+
+footer, footer a{
+    color: white;
+}
+
+/*Speceficity is a value given to the selector depending on meeting different criteria
+
+Selector type
+element selectors get a value of 1
+class selectors gets a value of 10
+id selector gets a value of 100
+
+SPECIAL NOTE: all inline styling gets a value of 1000
+
+Speceficity decisions are based on the value of the selector
+
+IF THE SPECEFICITY OF CONFLICTING RULES IS THE SAME VALUE, THE LAST RULE WINS*/
+
+li{
+    border-bottom: 1px solid black;
+}
+
+/*psuedo class are attached to elemments
+The order in which you code your psuedo classes in the anchor tag is extremely important
+
+ex. anchor tag
+a:link        unused link
+a:visited     used when anchor tag has been click on previously
+a:hover       when your cursor hovers over
+a:active      used when anchor is being clicked
+*/
+
+nav ul li a:visited {
+    color: red;
+}
+
+nav ul li a:hover {
+    color: blue;
+    font-size: larger;
+}
