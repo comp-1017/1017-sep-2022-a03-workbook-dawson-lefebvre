@@ -1,0 +1,28 @@
+/*
+Margin: The outer most party of the box which represents separation between elements
+
+Horizontal margins are added together between elements
+
+Vertical margins are COLAPSED. If the vertical margins are positive, than the larger of the two margins are used
+
+A margin can be coded in various styles:
+
+Longhand: margin-top: size; margin-right: size; margin- bottom: size; margin-left: size;
+equal and opposite sides: margin; tb-size rightleft-size;
+shorthand: margin: size;
+*/
+
+.margin-section{
+    margin: 24px 12px;
+}
+
+/*Border represents the outer displayable edge of boxes
+
+long hand: border-width: size; border-style: style; border-color: hex-value;
+short hand: border: style size color;
+
+border-width is made of border-top, border-left, border-bottom, border-right*/
+
+.border-section{
+    border: 3px solid black
+}
