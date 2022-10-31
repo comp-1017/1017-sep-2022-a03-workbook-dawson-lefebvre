@@ -7,7 +7,7 @@ body {
     width: 960px;
     margin: 0 auto;
     font-size: 100%;
-    line-height: 1.5
+    line-height: 1.5;
 }
 
 
@@ -33,4 +33,60 @@ body {
 
 .clearfix {
     *zoom: 1;
+}
+
+/*
+Default display of elements on your page is called "Stacked"
+
+To get your elements on the same line, we use something called "FlexBox"
+
+To invoke FlexBox, use the rule display: flex;
+
+FlexBox attempts to place all elements within it's immeditate specified container area on the same line
+
+Immediate?? The next level of elements
+
+FlexBox will automatically adjust measurements to get all elements to appear on the same line REGARDLESS of the physical width set for the element.
+
+Problem: Don't want all elements on the same line having their mesaurements altered 
+Solution: alter the default wrapping for flexbox which is none (flex-wrap: wrap;)
+
+This will place as many elements as possible on a single rwo without adjusting the measurements
+
+WARNING: flex-wrap affect a flex display area. Without the display: flex; rule, flex-wrap is meaningless.
+*/
+main{
+    background-color: lightgray;
+    display: flex;
+}
+
+footer{
+    background-color: lightgray;
+    padding-bottom: 30px;
+}
+
+.red-paint{
+    height: 300px;
+    width: 435px;
+    background-color: red;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.blue-paint{
+    height: 300px;
+    width: 435px;
+    background-color: blue;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.black-paint{
+    height: 50px;
+    width: 900px;
+    background-color: black;
+    margin-left: 30px;
+
 }
