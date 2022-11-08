@@ -1,0 +1,119 @@
+body {
+    background: rgba(0, 0, 0, 0.01);
+    font-family: Verdana, sans-serif;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+    font-size: 100%;
+    line-height: 1.5;
+}
+
+
+/*CLEAR FIX SOLLUTION*/
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/*
+Default display of elements on your page is called "Stacked"
+
+To get your elements on the same line, we use something called "FlexBox"
+
+To invoke FlexBox, use the rule display: flex;
+
+FlexBox attempts to place all elements within it's immeditate specified container area on the same line
+
+Immediate?? The next level of elements
+
+FlexBox will automatically adjust measurements to get all elements to appear on the same line REGARDLESS of the physical width set for the element.
+
+Problem: Don't want all elements on the same line having their mesaurements altered 
+Solution: alter the default wrapping for flexbox which is none (flex-wrap: wrap;)
+
+This will place as many elements as possible on a single rwo without adjusting the measurements
+
+WARNING: flex-wrap affect a flex display area. Without the display: flex; rule, flex-wrap is meaningless.
+*/
+main{
+    background-color: lightgray;
+    display: flex;
+    border: 2px solid black;
+}
+
+footer{
+    background-color: lightgray;
+    padding-bottom: 30px;
+}
+
+.red-paint{
+    height: 600px;
+    width: 150px;
+    border: 2px solid black;
+    background-color: red;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*
+
+Blue and green width 
+
+960px = 2 + 10 + 2 + 150 + 2 + 10 + 2 + content + 2 + 10 + 2
+
+960 = content + 192
+
+960 - 192 = content
+
+Content = 768
+
+height = 600 - 14 % 2 for border and margin 
+height = 586 % 2
+height = 293
+
+*/
+
+.blue-paint{
+    height: 293px;
+    width: 768px;
+    background-color: blue;
+    border: 2px solid black;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.black-paint{
+    height: 293px;
+    width: 768px;
+    border: 2px solid black;
+    background-color: green;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
