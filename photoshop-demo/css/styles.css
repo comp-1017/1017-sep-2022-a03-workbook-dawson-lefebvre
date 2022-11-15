@@ -30,12 +30,10 @@ p span{
 	font-weight: bold;
 }
 
-.date-and-author{
-	display: flex;
+section div{
 	text-align: center;
 }
 
-.date-and-author p{
-	padding-right: 40px;
+section div div{
+	display: flex;
 }
-
