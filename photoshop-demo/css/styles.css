@@ -11,29 +11,54 @@ body {
 	line-height: 1.5;
 }
 
-header, section, footer{
-	margin-bottom: 48px;
-}
 
-h2{
-	font-size: 48px;
-	font-weight: bold;
+
+h2,
+footer p, 
+h3{
 	color: #0b777b;
 }
 
-p{
-	font-size: 16px;
+section p{
 	color: #7f8c8c;
+	font-size: 16px;
 }
 
-p span{
+h2{
+	font-size: 60px;
+}
+
+h3{
+	font-size: 45px;
+}
+
+section{
+	margin-top: 70px;
+	margin-right: 90px;
+	margin-left: 90px;
+}
+
+section footer img{
+	vertical-align: middle;
+}
+
+section footer{
+	margin-top: 24px;
+}
+
+section footer span{
+	margin: 0 20px;
+}
+
+
+strong{
 	font-weight: bold;
 }
 
-section div{
-	text-align: center;
+footer img{
+	margin: 0 5px;
 }
 
-section div div{
-	display: flex;
+.footer-margin{
+	margin: 100px 0;
 }
